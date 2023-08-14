@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-generator": "^4.16.1",
+    "express-layout": "^0.1.0",
+    "pug": "^3.0.2"
+  }
+}
