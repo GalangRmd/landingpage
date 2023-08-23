@@ -1,0 +1,62 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Galang Web
+    include layout-link.pug
+  header#header.fixed-top
+    .container-fluid.d-flex.justify-content-between.align-items-center
+      h1.logo.me-auto.me-lg-0
+        a(href='/')
+          img(src='https://cryptologos.cc/logos/stellar-xlm-logo.png')
+      nav#navbar.navbar.expand-lg
+        ul
+          li
+            a.active(href='/') Home
+          li
+            a(href='/portfolio') Portfolio
+          li
+            a(href='/contact') Contact
+        i.bi.bi-list#mobile-nav-toggle
+
+      .header-social-links
+        a.twitter(href='#')
+          i.bi.bi-twitter
+        a.facebook(href='#')
+          i.bi.bi-facebook
+        a.instagram(href='#')
+          i.bi.bi-instagram
+        a.linkedin(href='#')
+          i.bi.bi-linkedin
+  
+  include style.pug 
+
+body.d-flex.flex-column.h-100
+  main.flex-shrink-0
+    section#hero.d-flex.align-items-center(style="width: 100%; height: 100vh; background-image: url('https://im.vsco.co/aws-us-west-2/cb57ac/285226215/64db16d82a05d9383100000a/bdb3e112-999d-41a9-91ec-e7e7add3931a6068136111504997550.jpg?w=1200'); background-size: cover;  height: 100vh ;\
+    background-size: cover ;\
+    background-position: center ;\
+    background-repeat: no-repeat ;")
+      .container.d-flex.flex-column.align-items-center(data-aos='zoom-in', data-aos-delay='100')
+        h1 
+          b Galang Ramadhan
+        h2 Programer | Photografer
+    section.bg-light.py-5
+      .container.px-5
+        .row.gx-5.justify-content-center
+          .col-xxl-8
+            .text-center.my-5
+              h2.display-5.fw-bolder
+                span.text-gradient.d-inline About Me
+              p.lead.fw-light.mb-4 My Name Is Galang Ramadhan
+              p.text-muted i am a programmer who has been crawling through lines of code since a young age, seeking wisdom in every dot and parenthesis. On the other side of the lens, I am also a photographer who strives to capture the beauty of the world in every shot. Life for me is a harmonious blend between logic and creativity.
+                  
+              .d-flex.justify-content-center.fs-2.gap-4
+              a.text-gradient(href='#!')
+                i.bi.bi-twitter
+              a.text-gradient(href='#!')
+                i.bi.bi-linkedin
+              a.text-gradient(href='#!')
+                i.bi.bi-github
+include footer.pug
